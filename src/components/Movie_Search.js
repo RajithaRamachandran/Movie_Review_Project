@@ -5,7 +5,7 @@ import React from 'react'
 const Movie_Search = () => {
     var [value,setvalue]=useState([])
     const disp=()=>{
-        axios.get(`"http://localhost:8080/search"`).then((response)=>{
+        axios.get("http://localhost:8080/search").then((response)=>{
             console.log(response.data)
             setvalue(
                 value=response.data
